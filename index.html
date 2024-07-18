@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between">
+            <div>
+                <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
+                <h5 class="d-inline-block fs-5">Instagram</h5>
+            </div>
+            <div class="d-flex align-right justify-content-end">
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- buttons position -->
+    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-plus"></i></a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                aria-controls="profile" aria-selected="false"><i class="fa-solid fa-minus"></i></a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+        <!-- photos row 1 -->
+        <div class="tab-pane fade overflow-hidden active show" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/91/3b/fd/913bfd09110eed5a1d7ebd62fe9e8b2b.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/9b/f4/f6/9bf4f60fb7565540063a307be98dcaae.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/564x/05/3b/c6/053bc6114fcc054b3985c050fdcba094.jpg"
+                        class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/564x/d3/9d/5c/d39d5cc1c73bd1ce58331562781576de.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/76/f2/20/76f220773cd582a592ff2e917e8b387d.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/564x/82/4b/16/824b168478bc8d7de7f0b7b6877b819a.jpg"
+                        class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/564x/21/5e/5e/215e5eeb9916be6dbde555082d586dd2.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/a9/72/fc/a972fcccbdbae5604058da254cb5cf31.jpg"
+                        class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
+                        src="https://i.pinimg.com/736x/84/92/bc/8492bcc9f11d6185aad753f05211f5fd.jpg"
+                        class="img-fluid w-100" alt=""></div>
+            </div>
+        </div>
+
+        <!-- photos row 2 -->
+        <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row my-3">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">the timer from other sides...</div>
+                        <small class="align-bottom">02/24</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/91/3b/fd/913bfd09110eed5a1d7ebd62fe9e8b2b.jpg" alt="">
+                    <div class="p-2">
+                        <strong>2222 Likes</strong>
+                        <p>timer <strong>#el barto</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">renaissance...</div>
+                        <small class="align-bottom">03/24</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/76/f2/20/76f220773cd582a592ff2e917e8b387d.jpg" alt="">
+                    <div class="p-2">
+                        <strong>2222 Likes</strong>
+                        <p>flowers <strong>pi-xel</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6 mx-auto border rounded p-0">
+                    <div class="d-flex p-2">
+                        <div class="w-100 fs-5">Elder...</div>
+                        <small class="align-bottom">04/24</small>
+                    </div>
+                    <img style="object-fit: cover;"
+                        src="https://i.pinimg.com/736x/84/92/bc/8492bcc9f11d6185aad753f05211f5fd.jpg" alt="">
+                    <div class="p-2">
+                        <strong>2222 Likes</strong>
+                        <p>forest <strong>Ring</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/d82e71839f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
